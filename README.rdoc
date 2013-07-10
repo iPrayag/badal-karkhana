@@ -3,10 +3,10 @@
 == Getting Started
 
 1. At the command prompt, clone this app:
-       <tt>git clone https://github.com/iPrayag/badal-karkhana.git</tt>
+       git clone https://github.com/iPrayag/badal-karkhana.git
 
 2. start the web server:
-       <tt>cd badal-karkhana; rails server</tt> (run with --help for options)
+       rails server (run with --help for options)
 
 3. Go to http://localhost:3000/ and you'll see:
        "Welcome aboard: You're riding Ruby on Rails!"
