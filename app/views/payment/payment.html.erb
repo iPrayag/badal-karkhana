@@ -1,0 +1,12 @@
+<h1>Pay</h1>
+<%= form_tag :action => 'payment' do %>
+
+	<%= label_tag :email %>
+        <%= text_field_tag :email, params[:email] %>
+
+	<%= label_tag :amount %>
+	<%= text_field_tag :amount %>
+
+        <%= submit_tag "Pay", class: "btn btn-large btn-primary" %>
+<% end %>
+<p></p>

@@ -1,7 +1,7 @@
 Gwitter::Application.routes.draw do
   resources :users
 
-  get "kura/kura"
+  get "payment/payment"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
