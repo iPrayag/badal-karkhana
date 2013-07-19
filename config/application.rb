@@ -58,5 +58,10 @@ module Gwitter
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    
+    # available at https://manage.stripe.com/account/apikeys
+    # change it
+    config.stripe.api_key= 'sk_test_jxxxxxxxxxxxx'
+    config.stripe.publishable_key = 'pk_test_5xxxxxxxxxxxxxxxxxx'
   end
 end
