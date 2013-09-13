@@ -35,7 +35,14 @@
 6) Go to http://localhost:3000/ and you'll see:
        "Badal Karkhana!"
 
-7) Follow the guidelines to start developing your application. You can find the following resources handy:
+7) [deploy using capistrano](http://guides.beanstalkapp.com/deployments/deploy-with-capistrano.html#install-capistrano)
+       $ capify .
+       [add] writing './Capfile'
+       [add] writing './config/deploy.rb'
+       [done] capified!
+
+
+8) Follow the guidelines to start developing your application. You can find the following resources handy:
 
 * The Getting Started Guide: http://guides.rubyonrails.org/getting_started.html
 * Ruby on Rails Tutorial Book: http://www.railstutorial.org/
@@ -44,8 +51,7 @@
 == Debugging Rails
 
 
-First area to check is the application log files. Have "tail -f" commands
-running on the server.log and development.log. Rails will automatically display
+Have "tail -f" commands running on the server.log and development.log. Rails will automatically display
 debugging and runtime information to these files. Debugging info will also be
 shown in the browser on requests from 127.0.0.1.
 
