@@ -3,6 +3,7 @@ Gwitter::Application.routes.draw do
 
   get "payment/payment"
 
+  get "validation/validate"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
