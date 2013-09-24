@@ -4,6 +4,9 @@ Gwitter::Application.routes.draw do
   get "payment/payment"
 
   get "validation/validate"
+
+  mount KannelRails::Engine => '/sms'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -18,6 +18,7 @@ end
 #gem 'stripe'
 gem 'stripe-rails'
 gem "capistrano", "~> 2.15.5"
+gem 'kannel_rails'
 
 # Gems used only for assets and not required
 # in production environments by default.
