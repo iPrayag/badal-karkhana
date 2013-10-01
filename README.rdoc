@@ -44,6 +44,7 @@
 
 Check rest api at `http://localhost:3000/validation/validate.xml`
 
+[kannel-api](http://www.slideshare.net/snowgiraffe/railsconf2009-integrating-sms-with-your-rails-app)
 
 8) Follow the guidelines to start developing your application. You can find the following resources handy:
 
