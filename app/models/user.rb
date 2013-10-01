@@ -1,6 +1,12 @@
-class User < ActiveRecord::Base
-  attr_accessible :firstName, 
-	          :lastName, 
-		  :contactNo
-  validates :firstName, length: {minimum: 3, maximum: 255}, allow_blank: false
+/**
+  * @author prayagupd
+  * @since  2013.07.07
+  */
+
+class User
+  include Mongoid::Document
+  include Mongoid::Timestamps
+  field :firstName, type: String
+  field :lastName, type: String
+  field :contactNo, type: String
 end
