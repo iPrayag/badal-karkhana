@@ -1,19 +1,19 @@
 source 'https://rubygems.org'
-source 'http://gemcutter.org'
 
-gem 'rails', '3.2.8'
-gem "mongo_mapper"
+gem 'rails', '4.0.0'
+gem 'mongoid', git: 'git://github.com/mongoid/mongoid.git'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 #
+
 group :development do
      gem 'sqlite3'
      
      ##gem 'mysql2', '< 0.3'
      ##fire the following command before (http://stackoverflow.com/a/4164390/432903)
      #sudo apt-get install libmysql-ruby libmysqlclient-dev
-     gem 'mysql', '2.8.1'
+     ## gem 'mysql', '2.8.1'
 
 end
 
@@ -25,8 +25,8 @@ gem 'kannel_rails'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'sass-rails',   '~> 4.0.0'
+  gem 'coffee-rails', '~> 4.0.0'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
@@ -35,6 +35,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'angularjs-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
