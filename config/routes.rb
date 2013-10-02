@@ -1,4 +1,6 @@
 Gwitter::Application.routes.draw do
+  resources :videos
+
   resources :users
 
   get "payment/payment"
