@@ -1,7 +1,7 @@
 root = global ? window
 angular = root.angular
 
-thisApp = angular.module("GwitterClient", ['ngCookies', 'videos']).config(['$routeProvider', '$locationProvider' , 
+thisApp = angular.module("GwitterClient", ['ngCookies', 'users', 'videos']).config(['$routeProvider', '$locationProvider' , 
 ($routeProvider, $locationProvider) ->
   #$locationProvider.hashPrefix('');
   $locationProvider.html5Mode true
@@ -20,6 +20,18 @@ thisApp = angular.module("GwitterClient", ['ngCookies', 'videos']).config(['$rou
   ).when("/videos/:id/edit",
     controller: VideosEditCtrl
     templateUrl: '<%= asset_path("videos/edit.html") %>'
+  ).when("/users", 
+    controller: UsersIndexCtrl
+    templateUrl: '<%= asset_path("users/index.html") %>'
+  ).when("/users/new",
+    controller: UsersCreateCtrl
+    templateUrl: '<%= asset_path("users/new.html") %>'
+  ).when("/users/:id",
+    controller: UsersShowCtrl
+    templateUrl: '<%= asset_path("users/show.html") %>'
+  ).when("/users/:id/edit",
+    controller: UsersEditCtrl
+    templateUrl: '<%= asset_path("users/edit.html") %>'
   ).otherwise redirectTo: "/"
 ])
 
