@@ -1,4 +1,5 @@
 class VideosController < ApplicationController
+respond_to :json
   before_action :set_video, only: [:show, :edit, :update, :destroy]
 
   # GET /videos

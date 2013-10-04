@@ -1,0 +1,27 @@
+root = global ? window
+angular = root.angular
+
+thisApp = angular.module("GwitterClient", ['ngCookies', 'videos']).config(['$routeProvider', '$locationProvider' , 
+($routeProvider, $locationProvider) ->
+  #$locationProvider.hashPrefix('');
+  $locationProvider.html5Mode true
+  $routeProvider.when("/",
+    controller: "WelcomeCtrl"
+    templateUrl: "<%= asset_path('welcome/index.html') %>"
+  ).when("/videos", 
+    controller: VideosIndexCtrl
+    templateUrl: '<%= asset_path("videos/index.html") %>'
+  ).when("/videos/new",
+    controller: VideosCreateCtrl
+    templateUrl: '<%= asset_path("videos/new.html") %>'
+  ).when("/videos/:id",
+    controller: VideosShowCtrl
+    templateUrl: '<%= asset_path("videos/show.html") %>'
+  ).when("/videos/:id/edit",
+    controller: VideosEditCtrl
+    templateUrl: '<%= asset_path("videos/edit.html") %>'
+  ).otherwise redirectTo: "/"
+])
+
+root.thisApp = thisApp
+

@@ -1,3 +1,20 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
+root = global ? window
+
+angular.module("videos", ["ngResource"]).factory "Video", ['$resource', ($resource) ->
+  Video = $resource("/videos/:id",
+    id: "@id"
+  ,
+    update:
+      method: "PUT"
+
+    destroy:
+      method: "DELETE"
+  )
+  Video::destroy = (cb) ->
+    Video.remove
+      id: @id
+    , cb
+
+  Video
+]
+root.angular = angular

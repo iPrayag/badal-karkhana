@@ -1,12 +1,19 @@
 GIT
   remote: git://github.com/mongoid/mongoid.git
-  revision: 14990e9b8027608d1b1c835e4ff3f7f2067238af
+  revision: 9deb6e6310e033c093cd183caf05b0ffe3ad8a13
   specs:
     mongoid (4.0.0)
       activemodel (~> 4.0.0)
       moped (~> 2.0.beta)
       origin (~> 1.0)
       tzinfo (~> 0.3.37)
+
+GIT
+  remote: https://github.com/patcito/angularjs_scaffold.git
+  revision: 2062a458f5b031f75e37a567ef30c06867b4e44a
+  specs:
+    angularjs_scaffold (0.0.23)
+      rails (>= 3.2.6)
 
 GEM
   remote: https://rubygems.org/
@@ -139,6 +146,7 @@ PLATFORMS
 
 DEPENDENCIES
   angularjs-rails
+  angularjs_scaffold!
   capistrano (~> 2.15.5)
   coffee-rails (~> 4.0.0)
   jquery-rails
