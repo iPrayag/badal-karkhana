@@ -3,7 +3,7 @@
 == Getting Started
 
 1) At the command prompt, clone this app:
-       git clone https://github.com/iPrayag/badal-karkhana.git
+       git clone https://github.com/prayagupd/badal-karkhana.git
 
 2) install bundler for rvm[http://rvm.io/integration/bundler]
        gem install rubygems-bundler
