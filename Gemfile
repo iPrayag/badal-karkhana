@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.0.0'
+gem 'rspec', '3.3.0'
+gem 'spec', '5.3.4'
 gem 'mongoid', git: 'git://github.com/mongoid/mongoid.git'
 gem 'angularjs_scaffold',  :git => "https://github.com/patcito/angularjs_scaffold.git"
 
